@@ -1,0 +1,44 @@
+---
+title: "Suicide.Rates.Markdown"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+suicide.data <- read.csv("Data/Suicide_Rates.csv")
+```
+
+# Project Overview
+
+This report looks at a global suicide rate over time, and differing by sex. The purpose of this
+report is to inform an audience interested in the mental health field about suicide rates across the globe. 
+We answer questions such as what regions have the lowest and highest suicide rates? and if there is a difference
+between male and female suicide rates.
+
+## Audience
+
+Our target audience shall be people who are interested in the mental
+health field. This data displays the differences in suicide rates by country
+and sex, allowing the audience to make inferences about the effects of
+certain pressues that cause the most suicidal tendencies.
+
+## Data
+The dataset we are working with is a WHO dataset about suicide rates
+across time all over the world. The WHOs Mental Health and Substance
+Abuse Department collected the data, and we accessed it through their
+website. They record suicide rates, substance abuse rates, and other
+mental health related data throughout the world.
+
+## Questions
+
+## Structure
+
+## Further Analysis
+
+## Project Creators 
+* Janey Yee
+* Lauren Krieger
+* Vicky Kourbatova
+* Bahar Bashizada
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
