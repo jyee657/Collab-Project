@@ -7,27 +7,18 @@
 #    http://shiny.rstudio.com/
 #
 
+suicide.data <- read.csv("Data/Suicide_Rates.csv")
+
+
 library(shiny)
 
-# Define UI for application that draws a histogram
-shinyUI(fluidPage(
-
-    # Application title
-    titlePanel("Old Faithful Geyser Data"),
-
-    # Sidebar with a slider input for number of bins
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
-
-        # Show a plot of the generated distribution
-        mainPanel(
-            plotOutput("distPlot")
-        )
-    )
+shinyUI(navbarPage("Suicide Rates Data",
+                   tabPanel("Summary", 
+                            includeMarkdown("RMarkdown.Rmd")),
+                   tabPanel("Plot1",
+                            textOutput("plot1")),
+                   tabPanel("Plot2",
+                            textOutput("plot2")),
+                   tabPanel("Plot3",
+                            textOutput("plot3"))
 ))
