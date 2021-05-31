@@ -40,5 +40,3 @@ mental health related data throughout the world.
 * Lauren Krieger
 * Vicky Kourbatova
 * Bahar Bashizada
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
