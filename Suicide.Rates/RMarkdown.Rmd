@@ -1,8 +1,6 @@
 ---
 title: "Global Suicide Rates Over Time"
-author: "Bahar Bashizada, Janey Yee, Victoria Kourbatova, & Lauren Krieger"
-date: "May 31, 2021"
-output: html_document: default
+output: html_document
 html_document: default
 ---
 
@@ -13,15 +11,29 @@ suicide.data <- read.csv("Data/Suicide_Rates.csv")
 
 # Project Overview
 
-This project looks at global suicide rates over time and differs by sex. The purpose of this report is to inform and educate an audience interested in the mental health field and statistics in suicide rates across the globe. We answer questions two questions that refer to the dataset and include a summary of the world map that visualizes the suicide rates globally.
+This project looks at global suicide rates over time and differs by sex. The 
+purpose of this report is to inform and educate an audience interested in the 
+mental health field and statistics in suicide rates across the globe. We answer 
+questions two questions that refer to the dataset and include a summary of the 
+world map that visualizes the suicide rates globally.
 
 ### Audience
 
-Our target audience are individuals who are interested in the mental health field, specifically those who are interested in how suicide rates are affected by different environments in the world. This data displays the differences in suicide rates by country and sex, which allows the audience to make observations and inferences on how the effects of different societal pressures contribute to suicidal tendencies. 
+Our target audience are individuals who are interested in the mental health 
+field, specifically those who are interested in how suicide rates are affected 
+by different environments in the world. This data displays the differences in 
+suicide rates by country and sex, which allows the audience to make 
+observations and inferences on how the effects of different societal pressures 
+contribute to suicidal tendencies. 
 
 ### Data
 
-The dataset we are working with is derived from the World Health Organization and comprises of data on suicide rates across time all over the world. The World Health Organization's Mental Health and Substance Abuse Department collected this data and it can be accessed publicly [here](https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en). This specific department records suicide rates, substance abuse rates, and other mental health related data throughout the world. 
+The dataset we are working with is derived from the World Health Organization 
+and comprises of data on suicide rates across time all over the world. The 
+World Health Organization's Mental Health and Substance Abuse Department 
+collected this data and it can be accessed publicly [here](https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en). This 
+specific department records suicide rates, substance abuse rates, and other 
+mental health related data throughout the world. 
 
 ## Questions
 
@@ -32,7 +44,15 @@ For this project, we will be asking two different questions:
 
 ## Structure
 
-Our application is structured so that each tab has a visualization of the dataset. The **'World Map'** tab encompasses data across the world in the form of a global map with color gradient to emphasize how high and low countries all across the world are in terms of suicide rate. The **'Gender Rates'** tab specifically observes the differences in suicide rates by gender by plotting a bar graph with different color. Lastly, the **'Country Rates'** tab displays an interactive plot that the audience can use to select different countries and exhibit a line graph for the selected countries.
+Our application is structured so that each tab has a visualization of the 
+dataset. The **'World Map'** tab encompasses data across the world in the 
+form of a global map with color gradient to emphasize how high and low 
+countries all across the world are in terms of suicide rate. The 
+**'Gender Rates'** tab specifically observes the differences in suicide rates 
+by gender by plotting a bar graph with different color. Lastly, the 
+**'Country Rates'** tab displays an interactive plot that the audience can use
+to select different countries and exhibit a line graph for the selected 
+countries.
 
 ## Further Analysis
 
@@ -42,8 +62,4 @@ Upon analyzing the dataset, we had reached the conclusion that _________.
 * Janey Yee
 * Lauren Krieger
 * Vicky Kourbatova
-<<<<<<< HEAD
 * Bahar Bashizada
-=======
-* Bahar Bashizada
->>>>>>> main
