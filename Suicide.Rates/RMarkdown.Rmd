@@ -1,11 +1,9 @@
 ---
-html_document: default
+title: "Global Suicide Rates Over Time"
 author: "Bahar Bashizada, Janey Yee, Victoria Kourbatova, & Lauren Krieger"
 date: "May 31, 2021"
-output:
-  pdf_document: default
-  html_document: default
-title: "Global Suicide Rates Over Time"
+output: html_document: default
+html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -44,4 +42,8 @@ Upon analyzing the dataset, we had reached the conclusion that _________.
 * Janey Yee
 * Lauren Krieger
 * Vicky Kourbatova
+<<<<<<< HEAD
 * Bahar Bashizada
+=======
+* Bahar Bashizada
+>>>>>>> main
