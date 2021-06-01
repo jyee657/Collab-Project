@@ -31,7 +31,8 @@ contribute to suicidal tendencies.
 The dataset we are working with is derived from the World Health Organization 
 and comprises of data on suicide rates across time all over the world. The 
 World Health Organization's Mental Health and Substance Abuse Department 
-collected this data and it can be accessed publicly [here](https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en). This 
+collected this data and it can be accessed publicly 
+[here](https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en). This 
 specific department records suicide rates, substance abuse rates, and other 
 mental health related data throughout the world. 
 
@@ -57,7 +58,7 @@ exhibit a line graph for the selected countries.
 
 Upon analyzing the dataset, we had reached the conclusion that _________. 
 
-## Project Creators {.tabset .tabset-fade}
+## Project Creators
 
 * Janey Yee
 * Lauren Krieger
