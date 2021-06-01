@@ -1,44 +1,47 @@
 ---
-title: "Suicide.Rates.Markdown"
-output: html_document
+html_document: default
+author: "Bahar Bashizada, Janey Yee, Victoria Kourbatova, & Lauren Krieger"
+date: "May 31, 2021"
+output:
+  pdf_document: default
+  html_document: default
+title: "Global Suicide Rates Over Time"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 suicide.data <- read.csv("Data/Suicide_Rates.csv")
 ```
 
 # Project Overview
 
-This report looks at a global suicide rate over time, and differing by sex. The purpose of this
-report is to inform an audience interested in the mental health field about suicide rates across the globe. 
-We answer questions such as what regions have the lowest and highest suicide rates? and if there is a difference
-between male and female suicide rates.
+This project looks at global suicide rates over time and differs by sex. The purpose of this report is to inform and educate an audience interested in the mental health field and statistics in suicide rates across the globe. We answer questions two questions that refer to the dataset and include a summary of the world map that visualizes the suicide rates globally.
 
-## Audience
+### Audience
 
-Our target audience shall be people who are interested in the mental
-health field. This data displays the differences in suicide rates by country
-and sex, allowing the audience to make inferences about the effects of
-certain pressues that cause the most suicidal tendencies.
+Our target audience are individuals who are interested in the mental health field, specifically those who are interested in how suicide rates are affected by different environments in the world. This data displays the differences in suicide rates by country and sex, which allows the audience to make observations and inferences on how the effects of different societal pressures contribute to suicidal tendencies. 
 
-## Data
-The dataset we are working with is a WHO dataset about suicide rates
-across time all over the world. The WHOs Mental Health and Substance
-Abuse Department collected the data, and we accessed it through their
-website. They record suicide rates, substance abuse rates, and other
-mental health related data throughout the world.
+### Data
+
+The dataset we are working with is derived from the World Health Organization and comprises of data on suicide rates across time all over the world. The World Health Organization's Mental Health and Substance Abuse Department collected this data and it can be accessed publicly [here](https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en). This specific department records suicide rates, substance abuse rates, and other mental health related data throughout the world. 
 
 ## Questions
 
+For this project, we will be asking two different questions:
+
+- What countries have the highest and lowest suicide rates?
+- Is there a difference between male and female suicide rates?
+
 ## Structure
+
+Our application is structured so that each tab has a visualization of the dataset. The **'World Map'** tab encompasses data across the world in the form of a global map with color gradient to emphasize how high and low countries all across the world are in terms of suicide rate. The **'Gender Rates'** tab specifically observes the differences in suicide rates by gender by plotting a bar graph with different color. Lastly, the **'Country Rates'** tab displays an interactive plot that the audience can use to select different countries and exhibit a line graph for the selected countries.
 
 ## Further Analysis
 
-## Project Creators 
+Upon analyzing the dataset, we had reached the conclusion that _________. 
+
+## Project Creators {.tabset .tabset-fade}
 * Janey Yee
 * Lauren Krieger
 * Vicky Kourbatova
 * Bahar Bashizada
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

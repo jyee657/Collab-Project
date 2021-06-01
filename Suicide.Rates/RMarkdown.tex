@@ -1,0 +1,152 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Global Suicide Rates Over Time},
+  pdfauthor={Bahar Bashizada, Janey Yee, Victoria Kourbatova, \& Lauren Krieger},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Global Suicide Rates Over Time}
+\author{Bahar Bashizada, Janey Yee, Victoria Kourbatova, \& Lauren
+Krieger}
+\date{May 31, 2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{project-overview}{%
+\section{Project Overview}\label{project-overview}}
+
+This project looks at global suicide rates over time and differs by sex.
+The purpose of this report is to inform and educate an audience
+interested in the mental health field and statistics in suicide rates
+across the globe. We answer questions two questions that refer to the
+dataset and include a summary of the world map that visualizes the
+suicide rates globally.
+
+\hypertarget{audience}{%
+\subsubsection{Audience}\label{audience}}
+
+Our target audience are individuals who are interested in the mental
+health field, specifically those who are interested in how suicide rates
+are affected by different environments in the world. This data displays
+the differences in suicide rates by country and sex, which allows the
+audience to make observations and inferences on how the effects of
+different societal pressures contribute to suicidal tendencies.
+
+\hypertarget{data}{%
+\subsubsection{Data}\label{data}}
+
+The dataset we are working with is derived from the World Health
+Organization and comprises of data on suicide rates across time all over
+the world. The World Health Organization's Mental Health and Substance
+Abuse Department collected this data and it can be accessed publicly
+\href{https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en}{here}.
+This specific department records suicide rates, substance abuse rates,
+and other mental health related data throughout the world.
+
+\hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+For this project, we will be asking two different questions:
+
+\begin{itemize}
+\tightlist
+\item
+  What countries have the highest and lowest suicide rates?
+\item
+  Is there a difference between male and female suicide rates?
+\end{itemize}
+
+\hypertarget{structure}{%
+\subsection{Structure}\label{structure}}
+
+Our application is structured so that each tab has a visualization of
+the dataset. The \textbf{`World Map'} tab encompasses data across the
+world in the form of a global map with color gradient to emphasize how
+high and low countries all across the world are in terms of suicide
+rate. The \textbf{`Gender Rates'} tab specifically observes the
+differences in suicide rates by gender by plotting a bar graph with
+different color. Lastly, the \textbf{`Country Rates'} tab displays an
+interactive plot that the audience can use to select different countries
+and exhibit a line graph for the selected countries.
+
+\hypertarget{further-analysis}{%
+\subsection{Further Analysis}\label{further-analysis}}
+
+Upon analyzing the dataset, we had reached the conclusion that
+\_\_\_\_\_\_\_\_\_.
+
+\hypertarget{project-creators}{%
+\subsection{Project Creators}\label{project-creators}}
+
+\begin{itemize}
+\tightlist
+\item
+  Janey Yee
+\item
+  Lauren Krieger
+\item
+  Vicky Kourbatova
+\item
+  Bahar Bashizada
+\end{itemize}
+
+\end{document}
