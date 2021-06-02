@@ -15,10 +15,12 @@ library(shiny)
 shinyUI(navbarPage("Suicide Rates Data",
                    tabPanel("Summary", 
                             includeMarkdown("RMarkdown.Rmd")),
-                   tabPanel("Plot1",
+                   tabPanel("World Map",
                             textOutput("plot1")),
-                   tabPanel("Plot2",
+                   tabPanel("Gender Rates",
                             textOutput("plot2")),
-                   tabPanel("Plot3",
-                            textOutput("plot3"))
+                   tabPanel("Country Rates",
+                            textOutput("plot3")),
+                   tabPanel("Conclusion",
+                            includeMarkdown("Conclusion.Rmd"))
 ))

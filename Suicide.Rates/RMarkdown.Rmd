@@ -8,6 +8,7 @@ html_document: default
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 suicide.data <- read.csv("Data/Suicide_Rates.csv")
 ```
+![](WHO.jpg)
 
 # Project Overview
 
@@ -31,7 +32,11 @@ contribute to suicidal tendencies.
 The dataset we are working with is derived from the World Health Organization 
 and comprises of data on suicide rates across time all over the world. The 
 World Health Organization's Mental Health and Substance Abuse Department 
+<<<<<<< HEAD
 collected this data and it can be accessed publicly 
+=======
+collected this data and it can be accessed publicly
+>>>>>>> main
 [here](https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en). This 
 specific department records suicide rates, substance abuse rates, and other 
 mental health related data throughout the world. 
@@ -57,6 +62,17 @@ exhibit a line graph for the selected countries.
 ## Further Analysis
 
 Upon analyzing the dataset, we had reached the conclusion that _________. 
+
+## Project Creators
+
+dataset. The **'World Map'** tab encompasses data across the world in the 
+form of a global map with color gradient to emphasize how high and low 
+countries all across the world are in terms of suicide rate. The 
+**'Gender Rates'** tab specifically observes the differences in suicide rates 
+by gender by plotting a bar graph with different color. Lastly, the 
+**'Country Rates'** tab displays an interactive plot that the audience can use
+to select different countries and exhibit a line graph for the selected 
+countries.
 
 ## Project Creators
 
