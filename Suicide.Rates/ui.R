@@ -20,5 +20,7 @@ shinyUI(navbarPage("Suicide Rates Data",
                    tabPanel("Gender Rates",
                             textOutput("plot2")),
                    tabPanel("Country Rates",
-                            textOutput("plot3"))
+                            textOutput("plot3")),
+                   tabPanel("Conclusion",
+                            includeMarkdown("Conclusion.Rmd"))
 ))

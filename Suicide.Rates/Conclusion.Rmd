@@ -1,0 +1,50 @@
+---
+title: "Conclusion"
+output: html_document
+html document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+suicide.data <- read.csv("Data/Suicide_Rates.csv")
+```
+
+## Further Analysis
+
+Upon analyzing the dataset, we have noticed a notable pattern of high suicide 
+rates in East Asia, specifically countries such as South Korean, Japan, and 
+China. This pattern can be observed by using the **'Map'** because it shows 
+that the percentage of blah blah blah. 
+
+A few broader implications of this insight can be due to several reasons: 
+
+- Bullying. Cyber bullying is a major problem that East Asian youth are victims 
+to. Young East Asians often do not have any support or a way to vent, leading 
+to suicide being the only option. 
+
+- The competitiveness within both school and work-life. Education in East Asian 
+schools are very rigorous and does not end when school is out. After 
+school studying and tutoring sessions can last until 12 AM only to repeat the 
+next day, which is the reality for Korean students.
+
+- Lack of mental health support. There continues to be stigma and negative 
+connotations mentally ill or struggling individuals. Going through depression 
+or any other disorders could make these people feel alienated and lonely, which 
+makes it easier to spiral into contemplating suicide.
+
+### Data Quality + Future Ideas
+
+The quality of this dataset seems to be reasonable, especially considering the 
+source is from the World Health Organization, which is reputable and notorious 
+for giving unbiased data. Rather than harming certain populations, this dataset
+is raising awareness of populations that are already hurting themselves and the
+reality that even a low suicide rate is still extremely unfortunate and sheds 
+light to mental health disparities and the consequences of those issues.
+
+In terms of future ideas and how this project can be advanced further, it would 
+be a great idea to include more factors such as hours worked within a day, education, and economic/financial stability so that we can observe these
+patterns in greater depth.
+
+
+![](hotline.png)
+

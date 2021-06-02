@@ -8,6 +8,7 @@ html_document: default
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 suicide.data <- read.csv("Data/Suicide_Rates.csv")
 ```
+![](WHO.jpg)
 
 # Project Overview
 
@@ -54,10 +55,6 @@ by gender by plotting a bar graph with different color. Lastly, the
 **'Country Rates'** tab displays an interactive plot that the audience can use
 to select different countries and exhibit a line graph for the selected 
 countries.
-
-## Further Analysis
-
-Upon analyzing the dataset, we had reached the conclusion that _________. 
 
 ## Project Creators
 * Janey Yee
