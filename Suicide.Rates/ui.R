@@ -11,6 +11,12 @@ suicide.data <- read.csv("Data/Suicide_Rates.csv")
 
 
 library(shiny)
+library(plotly)
+
+countries <- suicide.data %>% 
+  select(Country) %>% 
+  unique()
+
 
 shinyUI(navbarPage("Suicide Rates Data",
                    tabPanel("Summary", 
@@ -19,8 +25,15 @@ shinyUI(navbarPage("Suicide Rates Data",
                             textOutput("plot1")),
                    tabPanel("Gender Rates",
                             textOutput("plot2")),
+                   
                    tabPanel("Country Rates",
-                            textOutput("plot3")),
+                            titlePanel("Suicides by Year per Country"),
+                            textOutput("text3"),
+                            selectInput("country3", label = "Country", 
+                                        choices = c(countries),
+                                        selected = "Afghanistan"),
+                            plotOutput("plot3")),
+                   
                    tabPanel("Conclusion",
                             includeMarkdown("Conclusion.Rmd"))
 ))
