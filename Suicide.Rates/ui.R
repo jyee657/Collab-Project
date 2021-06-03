@@ -37,7 +37,12 @@ shinyUI(navbarPage("Suicide Rates Data",
                                                  choices=c(2000:2019)),
                             plotOutput("plot2")),
                    tabPanel("Country Rates",
-                            textOutput("plot3")),
+                            titlePanel("Suicides by Year per Country"),
+                            textOutput("text3"),
+                            selectInput("country3", label = "Country", 
+                                        choices = c(countries),
+                                        selected = "Afghanistan"),
+                            plotOutput("plot3")),
                    tabPanel("Conclusion",
                             uiOutput('conclusion'))
 ))
