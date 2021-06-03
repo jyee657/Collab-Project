@@ -43,6 +43,7 @@ For this project, we will be asking two different questions:
 
 - What countries have the highest and lowest suicide rates?
 - Is there a difference between male and female suicide rates?
+- How do suicide rates change over time?
 
 ## Structure
 
