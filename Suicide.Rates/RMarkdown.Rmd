@@ -39,7 +39,7 @@ mental health related data throughout the world.
 
 ## Questions
 
-For this project, we will be asking two different questions:
+For this project, we will be asking three different questions:
 
 - What countries have the highest and lowest suicide rates?
 - Is there a difference between male and female suicide rates?
