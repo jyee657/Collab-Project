@@ -20,9 +20,10 @@ countries <- suicide.data %>%
 
 shinyUI(navbarPage("Suicide Rates Data",
                    tabPanel("Summary", 
-                            includeMarkdown("RMarkdown.Rmd")),
+                            uiOutput('summary')),
                    tabPanel("World Map",
-                            textOutput("text1"),
+                           titlePanel("World Map"),
+                           textOutput("text1"),
                            selectInput("year1", "Select a year", 
                                        choices=c(2000:2019), selected=2016),
                            plotlyOutput("map")),
@@ -38,5 +39,5 @@ shinyUI(navbarPage("Suicide Rates Data",
                    tabPanel("Country Rates",
                             textOutput("plot3")),
                    tabPanel("Conclusion",
-                            includeMarkdown("Conclusion.Rmd"))
+                            uiOutput('conclusion'))
 ))

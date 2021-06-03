@@ -10,12 +10,20 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
+library(knitr)
 
 shinyServer(function(input, output) {
+    
+    output$summary <- renderUI({
+      HTML(markdown::markdownToHTML(knit('RMarkdown.Rmd', quiet = TRUE)))
+    })
     
     source('Plot1.R', local = TRUE)
     source('Plot2.R', local = TRUE)
     source('Plot3.R', local = TRUE)
-  ##  source('tables.R', local = TRUE)
+    
+    output$conclusion <- renderUI({
+      HTML(markdown::markdownToHTML(knit('Conclusion.Rmd', quiet = TRUE)))
+    })
     
 })
