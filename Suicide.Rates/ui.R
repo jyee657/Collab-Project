@@ -15,6 +15,7 @@ library(plotly)
 
 countries <- suicide.data %>% 
     select(Country) %>% 
+    arrange(Country) %>% 
     unique()
 
 
