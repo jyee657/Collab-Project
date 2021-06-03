@@ -3,7 +3,7 @@ suicide.data <- read.csv("Data/Suicide_Rates.csv")
 output$text2 <- renderText({
 paste("This is a chart for gender and suicide across the world. You can select a 
       year and a country to see the differences between gender and suicide rates 
-      over time. This can be used to compare rates.")
+      over time. This can be used to compare rates. In most countries, male suicide rates tend to be higher.")
       })
 
  p <- reactive({

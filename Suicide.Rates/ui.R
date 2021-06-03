@@ -20,8 +20,7 @@ countries <- suicide.data %>%
 shinyUI(navbarPage("Suicide Rates Data",
                    tabPanel("Summary", 
                             includeMarkdown("RMarkdown.Rmd")),
-                   
-                   tabPanel("Plot1",
+                    tabPanel("World Map",
                             textOutput("plot1")),
                    
                    tabPanel("Gender and Suicide",
@@ -33,7 +32,8 @@ shinyUI(navbarPage("Suicide Rates Data",
                             selectInput("year", "Year",
                                                  choices=c(2000:2019)),
                             plotOutput("plot2")),
-                   
-                   tabPanel("Plot3",
-                            textOutput("plot3"))
+                   tabPanel("Country Rates",
+                            textOutput("plot3")),
+                   tabPanel("Conclusion",
+                            includeMarkdown("Conclusion.Rmd"))
 ))
