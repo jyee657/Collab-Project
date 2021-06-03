@@ -2,7 +2,7 @@ library(tidyr)
 library(stringr)
 
 suicide_data <- read.csv("Data/Suicide_Rates.csv", check.names = FALSE)
-data_longform <- gather(suicide_data, Year, Rate, " 2019":" 2000", factor_key=FALSE)
+data_longform <- gather(suicide_data, Year, Rate, "X.2019":"X.2000", factor_key=FALSE)
 
 output$text3 <- renderText({
   paste("This line graph shows the change in suicide rates over time in different
@@ -15,7 +15,8 @@ plot_data <- reactive({
     filter(Country == input$country3) %>%
     filter(Sex == " Both sexes") %>% 
     mutate(Rate = as.numeric(word(Rate, 1))) %>% #selects first number 
-    select(Country, Year, Rate)
+    select(Country, Year, Rate) %>% 
+    mutate(Year = substr(Year, 3, 6))
   return(filtered_data)
 }) 
 
