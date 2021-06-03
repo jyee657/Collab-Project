@@ -8,14 +8,14 @@ paste("This is a chart for gender and suicide across the world. You can select a
       })
 
  p <- reactive({
-    year <- paste0("X.", input$year)
+    year <- paste0("X.", input$year2)
     filtered <-
       suicide.data %>%
       mutate_(Year = year) %>% 
       filter(Country == input$country) %>% 
       mutate(Rate = as.numeric(sub(" \\[.*", "", Year))) %>%
-      select(Country, Rate, Sex)
-    return(filtered)
+      select(Country, Year, Rate, Sex)
+      return(filtered)
   }) 
 
 output$plot2 <- renderPlot({
