@@ -19,7 +19,6 @@ paste("This is a chart for gender and suicide across the world. You can select a
   }) 
 
 output$plot2 <- renderPlot({
-  print(head(p()))
   d <- ggplot(p(), aes(Sex, Rate, fill=Sex)) +
   labs(
     x = "Gender",

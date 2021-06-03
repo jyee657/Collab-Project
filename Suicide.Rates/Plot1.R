@@ -5,8 +5,13 @@ library(scales)
 data <- read.csv("Data/Suicide_Rates.csv")
 map <- map_data("world")
 
+output$text1 <- renderText({
+  paste("This is a map of suicide rates across the world. You can select a year
+  to see the differences of rates in different times and countries.")
+})
+
 modify <- reactive({
-  year <- paste0("X.", input$year)
+  year <- paste0("X.", input$year1)
   output <- data %>% 
     select(Country, Sex, year) %>% 
     filter(Sex == " Both sexes") %>% 
